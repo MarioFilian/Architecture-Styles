@@ -1,0 +1,36 @@
+{
+  "name": "architectures-demo",
+  "version": "1.0.0",
+  "description": "Demo de estilos de arquitectura con servidor y cliente separados",
+  "scripts": {
+    "rest-server": "cd RestApi && node server.js",
+    "rest-client": "cd RestApi && node client.js",
+    "soap-server": "cd Soap && node server.js",
+    "soap-client": "cd Soap && node client.js",
+    "webhook-server": "cd Webhook && node server.js",
+    "webhook-client": "cd Webhook && node client.js",
+    "ws-server": "cd Websocket && node server.js",
+    "ws-client": "cd Websocket && node client.js",
+    "socketio-server": "cd Socket.IO && node server.js",
+    "socketio-client": "cd socket.IO-api && node client.js",
+    "grpc-server": "cd gRPC && node server.js",
+    "grpc-client": "cd gRPC && node client.js",
+    "graphql-server": "cd GraphQL && node server.js",
+    "graphql-client": "cd GraphQL && node client.js",
+    "install-all": "npm install express axios soap ws socket.io @grpc/grpc-js @grpc/proto-loader @apollo/server graphql"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.12.2",
+    "@grpc/grpc-js": "^1.13.4",
+    "@grpc/proto-loader": "^0.7.15",
+    "axios": "^1.10.0",
+    "express": "^4.21.2",
+    "graphql": "^16.11.0",
+    "soap": "^1.1.12",
+    "socket.io": "^4.8.1",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
